@@ -7,9 +7,9 @@ header{
 }
 p , .banner-usine-container h2 , .contain-text-banner-bag-plat h3,.contain-banner-text-3 h3 , .bg-impression  h2 , .container-card-print  a , .contain-size-section h2{
     font-family: "Lora", serif;
-    /* font-optical-sizing: auto; */
-    font-style: normal;
-    font-weight: 100;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 .banner-usine-container h2 {
     font-size: 1em;
@@ -86,15 +86,16 @@ header nav a {
 }
 
 .text-landing-banner p{
-    font-size: .6em;
+    font-size: 1em;
     margin-top: .6em;
-    border-bottom: 1px solid black;
     width: fit-content;
     margin: auto;
+    text-decoration: none;
+    font-weight: bolder;
 }
 .text-landing-banner a {
-    text-decoration: none;
     color: #000;
+
 }
 .under-landing-page-text{
     width: 95%;
@@ -124,7 +125,7 @@ header nav a {
 }
 
 .landing-impression-section img {
-    width: 45%;
+    width: 70%;
     margin-bottom: 1em;
     margin-left: 1em;
 }
@@ -148,7 +149,6 @@ header nav a {
     font-size: 1em;
 }
 .impressions-type-btn a {
-    text-decoration: none;
     font-size: .8em;
     color: black;
 }
@@ -167,7 +167,6 @@ margin: 1em 0;
     font-size: .9em;
 }
 .text-bag-banner a {
-    text-decoration: none;
     color: #000;
 }
 .banner-container{
@@ -518,38 +517,59 @@ display: none;
 
 @media only screen and (min-width: 1024px){
     .text-bag-banner{
-        font-size: 2em;
-        transform: translateY(60%);
+        font-size: 3em;
+        transform: translateY(550%);
+        letter-spacing: .2em;
+        word-spacing: .2em;
     }
     .contain-banner-text-3{
         width: 50%;
         margin-right: 50em;
-        transform: translateY(250%);
+        transform: translateY(50%);
         text-align: center;
     }
     .contain-text-bag-page{
         font-size:1.3em;
-        margin:1em;
+        background-color:#eae2cd;
+        margin: auto  ;
+        width: 100%;
+    }
+    .contain-text-bag-page p {
+        width: 75%;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        text-align: center;
+        margin: auto;
+        padding: 1em;
     }
     .contain-text-banner-bag-plat{
         width: 50%;
-        transform: translateY(300%);
+        transform: translateY(100%);
         margin-left: 50em;
     }
     .contain-banner-text-3 h3{
-        margin-left:4.5em ;
+        margin-left:3em ;
     }
     .contain-text-banner-bag-plat h3 {
         margin-right: 1.5em;
     }
     .contain-text-banner-bag-plat h3 , .contain-banner-text-3 h3{
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2em;
+        letter-spacing: .5em;
+        word-spacing: .5em;
+        font-weight: bold;
+        width: 100%;
+        margin: auto;
     }
     .bag-btn , .bag-btn-3{
-        width: 60%;
-        font-size: 1em;
-        margin: auto;
+        width: 70%;
+        font-size: 1.5em;
+        margin: 1em auto ;
+        padding: 2.5em;
+        border-radius: 1em;
     }
     .bag-plat-bg-3{
         background-image: url('../img/Image_paper_land_Categorie_3.png');
@@ -650,8 +670,11 @@ display: none;
 .bg-impression img {
     height: 35vh;
 }
-.bg-impression p , .bg-impression  h2 {
-    font-size: 1.3em;
+.bg-impression p {
+    font-size: 2em;
+}
+.bg-impression  h2 {
+    font-size: 2.5em;
 }
 .banner-container{
     height: 52.5vh;
@@ -671,8 +694,8 @@ display: none;
     .banner-usine-container p {
         text-align: left;
         margin-left: 2em;
-        font-size: 1.3em;
-        width: 70%;
+        font-size: 1.6em;
+        width: 50%;
         line-height: 1.8em;
         margin-bottom: 2em;
     }
@@ -681,22 +704,32 @@ display: none;
         transform: translateX(30%);
         transform: translateY(100%);
         font-size: 1.5rem;
+        font-style: italic;
+
     }
+ 
+
     .landing-banner-header p {
-        display: none;
+        margin-top: 1em;
+        margin-left: 4em;
     }
   
     .text-landing-banner{
-        transform: translateY(300%);
-        font-size: 1.5em;
+        transform: translateY(700%);
+        font-size: 2em;
+        padding: 0;
+    }
+    .text-landing-banner p {
+        font-style: normal;
     }
     .landing-impression-section{
         height: 40vh;
     }
     .impressions-type-btn{
-        width: 50%;
+        width: 70%;
         margin: auto;
         font-size: 1.5em;
+        letter-spacing: .3em;
     }
     
     .contain-text-landing-page p {
@@ -705,18 +738,22 @@ display: none;
         text-align: center;
     }
     .under-landing-page-text p{
-        font-size:1.5em;
+        font-size:2em;
+        letter-spacing: .1em;
+        word-spacing: .6em;
     }
     .contain-text-landing-page{
         margin-right: 2em;
+        font-size: 1.6em;
     }
     .landing-impression-section img {
-    width: 25%;
+    width: 45%;
     margin-left: 11em;
     }
     
     .landing-impression-section{
         align-items: center;
+        height: fit-content;
     }
     .contained-modal p {
         font-size: 1em;
