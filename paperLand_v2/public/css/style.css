@@ -18,13 +18,16 @@ p , .banner-usine-container h2 , .contain-text-banner-bag-plat h3,.contain-banne
     font-size: 2em;
     margin: auto;
     text-align: center;
-  /*margin-left: 1em; /*permet de gerer la postion du titre paperLand*/
+    /*margin-left: 1em; /*permet de gerer la postion du titre paperLand*/
     font-family: "Alice", serif;
     font-weight: 200;
     font-style: normal;
     text-transform: uppercase;
 }
-
+.site-title a {
+    text-decoration: none;
+    color: #000;
+}
 header nav a {
     text-decoration: none;
     color: black;
@@ -89,6 +92,10 @@ header nav a {
     width: fit-content;
     margin: auto;
 }
+.text-landing-banner a {
+    text-decoration: none;
+    color: #000;
+}
 .under-landing-page-text{
     width: 95%;
     padding: .9em;
@@ -116,28 +123,29 @@ header nav a {
 
 }
 
-.contain-img-landing-page  {
+.landing-impression-section img {
     width: 45%;
-    margin-top: 2em;
+    margin-bottom: 1em;
     margin-left: 1em;
 }
 
 .contain-text-landing-page{
     width: 80%;
     padding: 1em;
+    margin-right: 2em;
 }
 .contain-text-landing-page p {
     margin-left: 1em;
     margin-bottom: 1.5em;
-    word-spacing: .5em;
-    font-size: .7em;
+    word-spacing: .3em;
+    font-size: .79em;
 }
 .impressions-type-btn{
     background-color: #eae2cd;
     text-align: center;
-    padding: 1em;
+    padding: .4em;
     border-radius: 20px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .impressions-type-btn a {
     text-decoration: none;
@@ -154,14 +162,17 @@ margin: 1em 0;
 
 .banner-usine-container p {
     text-align: center;
-    width: 95%;
+    width: 100%;
     margin: 1em auto;
     font-size: .9em;
 }
-
+.text-bag-banner a {
+    text-decoration: none;
+    color: #000;
+}
 .banner-container{
     background-image: url(../img/bag-banner.png);
-    background-position: center;
+    /* background-position: center; */
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -171,10 +182,10 @@ margin: 1em 0;
     .bag-btn-3{
         margin-left: 7.5em;
     }
-    .contain-text-banner-bag-plat{
+    /* .contain-text-banner-bag-plat{
         padding-top: 15vh;
-        margin-left: 1.5em;
-    }
+        margin-left: 1.9em;
+    } */
     .bag-btn{
         background-color: #eae2cd;
         text-align: center;
@@ -183,18 +194,15 @@ margin: 1em 0;
         margin-left: 6.5em;
         border-radius: 20px;
     }
-    .bag-plat-bg-3{
-        height: 26.9vh;
-    }
     .contain-banner-text-3{
         margin-right: 1.5em;
     }
     .bag-plat-bg-3{
         height: 30vh;
     }
-    .text-bag-banner{
+    /* .text-bag-banner{
         padding-top: 18vh;
-    }
+    } */
     .contained-modal{
         margin-top: 20%;
     }
@@ -206,18 +214,18 @@ margin: 1em 0;
     .container-bg-banner-bag-plat{
         height: 25vh;
     }
-    .contain-text-banner-bag-plat{
+    /* .contain-text-banner-bag-plat{
         padding-top: 15vh;
-    }
+    } */
     .bag-btn-3{
         margin-left: 9em;
     }
     .text-landing-banner{
         padding-top: 20vh;
     }
-    .text-bag-banner{
+    /* .text-bag-banner{
         padding-top: 25vh;
-    }
+    } */
 }
 @media screen and (min-width:400px){
     .banner-container{
@@ -257,13 +265,12 @@ margin: 1em 0;
     }
 } 
 
-
 .text-bag-banner{
     text-align: center;
     margin: auto;
     /* padding-top: 49%; permet de gerer la hauteur du texte de la banniere de la landing page galere a gerer selon la taille d'ecran */
     letter-spacing: .5vw;
-    
+    transform: translateY(650%);
 }
 .text-bag-banner h3 {
     font-size: .7em;
@@ -275,11 +282,11 @@ margin: 1em 0;
 .contain-text-bag-page{
     font-size: .7em;
     text-align: center;
-    margin-top:1em;
+    margin:1em;
 }
 .container-bg-banner-bag-plat{
     background-image: url(../img/Image_paper_land_Categorie_.png);
-    background-position: center;
+    /* background-position: center; */
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -300,20 +307,20 @@ margin: 1em 0;
 }
 .contain-text-banner-bag-plat{
     text-align: center;
-    /* margin: auto; */
-    /* padding-top: 8vh; permet de gerer la hauteur du texte de la banniere de la landing page galere a gerer selon la taille d'ecran */
+    margin: auto;
+    transform: translateY(170%);
     letter-spacing: .5vw;
 }
 .contain-text-banner-bag-plat h3 {
     font-size: .8em;
     text-align: left;
-    /* margin-left: 2em; */
-    margin-bottom: .5em;
+    margin-bottom: .5em; 
     text-transform: uppercase;
+    margin-left: 4em;
 }
 .bag-plat-bg-3{
     background-image: url(../img/bg-section-3.png);
-    background-position: center;
+    /* background-position: center; */
     background-size: contain;
     background-repeat:no-repeat;
     /* height: 26.9vh; */
@@ -321,13 +328,13 @@ margin: 1em 0;
 .contain-banner-text-3{
     text-align: right;
     /* margin: auto; */
-    padding-top: 32%; /*permet de gerer la hauteur du texte de la banniere de la landing page galere a gerer selon la taille d'ecran*/
+    transform: translateY(170%);
     letter-spacing: .5vw;
 }
 .contain-banner-text-3 h3{
     font-size: .8em;
     text-align: right;
-    /* margin-right: 1.4em; */
+    margin-right: 1.5em;
     margin-bottom: .5em;
     text-transform: uppercase;
 }
@@ -383,6 +390,8 @@ margin: 1em 0;
     background-image: url('../img/bg-banner-impression-page.png');
     display: flex;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg-impression img{
@@ -506,59 +515,210 @@ display: none;
 .impressions_type p {
     margin-bottom: 1em;
 }
+
 @media only screen and (min-width: 1024px){
-    main{
-        width: 80%;
+    .text-bag-banner{
+        font-size: 2em;
+        transform: translateY(60%);
+    }
+    .contain-banner-text-3{
+        width: 50%;
+        margin-right: 50em;
+        transform: translateY(250%);
+        text-align: center;
+    }
+    .contain-text-bag-page{
+        font-size:1.3em;
+        margin:1em;
+    }
+    .contain-text-banner-bag-plat{
+        width: 50%;
+        transform: translateY(300%);
+        margin-left: 50em;
+    }
+    .contain-banner-text-3 h3{
+        margin-left:4.5em ;
+    }
+    .contain-text-banner-bag-plat h3 {
+        margin-right: 1.5em;
+    }
+    .contain-text-banner-bag-plat h3 , .contain-banner-text-3 h3{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .bag-btn , .bag-btn-3{
+        width: 60%;
+        font-size: 1em;
         margin: auto;
     }
+    .bag-plat-bg-3{
+        background-image: url('../img/Image_paper_land_Categorie_3.png');
+        background-position: center ; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size:100% 130%; /* Resize the background image to cover the entire container */
+        height: 80vh;
+    }
+    .container-bg-banner-bag-plat{
+        background-image: url('../img/Image_paper_land_Categorie_2.png');
+        background-position: center ; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        height: 70vh;
+    }
+    .banner-container{
+        background-image: url('../img/bag-banner_3.png');
+        background-position: center ; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 100% 115%; /* Resize the background image to cover the entire container */
+        height: 70vh;
+    }
     .landing-banner{
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
+        background-image: url('../img/desktop_banner_landing_page.jpg');
+        background-position: center ; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 100% 105%; /* Resize the background image to cover the entire container */
+        height: 70vh;
     }
-    .container-card-print{
-        width: 35%;
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    .contain-img-landing-page  {
-        width: 26%;
-        margin-left: 10em;
-        margin-bottom: 3em;
+    .contain-menu{
+        display: none;
+    }
+    .containMenu{
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+    }
+    .site-title{
+        text-align: left;
+        margin: 1em;
+        display: inline;
+    }
+.impressions-type {
+    width: 100%;
+    }
+.impressions_type h3 {
+    text-align: center;
+}
+.contain-size-section h2{
+    font-size: 2em;
+    margin-left:2em ;
+}
+.impressions_type div{
+    width: 40%;
+    font-size: 1.5em;
+    margin: auto;
+}
+.contain-size-section img{
+    width: 100%;
+    height: 65vh;
+}
+.banner-usine-container img {
+    height: 55vh;
+}
+.text-landing-banner{
+    padding-top: 9vh;
+}
+.impressions-type-container{
+    justify-content: center;
+    margin: auto;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.container-card-print {
+    margin-bottom: 2em;
+}
+.container-card-print img{
+    width: 85%;
+    height: 50vh;
+    margin: auto;
+}
+.container-card-print a , .container-card-print p {
+    margin: 1em;
+}
+.intersection-container p {
+    font-size: 2em;
+    margin: 2em;
+}
+
+.bg-impression{
+    justify-content: center;
+}
+.bg-impression img {
+    height: 35vh;
+}
+.bg-impression p , .bg-impression  h2 {
+    font-size: 1.3em;
+}
+.banner-container{
+    height: 52.5vh;
+}
+.bag-plat-bg-3{
+    height: 48vh;
+}
+.container-bg-banner-bag-plat{
+    margin-bottom: 1em;
+}
+.banner-usine-container h2{
+    font-size: 2em;
+}
+    .banner-usine-container img{
+        width: 100%;
+    }
+    .banner-usine-container p {
+        text-align: left;
+        margin-left: 2em;
+        font-size: 1.3em;
+        width: 70%;
+        line-height: 1.8em;
+        margin-bottom: 2em;
+    }
+    .landing-banner-header{
+        position: absolute;
+        transform: translateX(30%);
+        transform: translateY(100%);
+        font-size: 1.5rem;
+    }
+    .landing-banner-header p {
+        display: none;
+    }
+  
+    .text-landing-banner{
+        transform: translateY(300%);
+        font-size: 1.5em;
+    }
+    .landing-impression-section{
+        height: 40vh;
     }
     .impressions-type-btn{
         width: 50%;
         margin: auto;
+        font-size: 1.5em;
     }
-    .contain-text-landing-page{
-    text-align: center;
-    }
-    .landing-impression-section{
-        height: 250px;
-    }
-    .text-landing-banner{
-        padding-top: 40vh;
-    }
-    .banner-usine-container > *{
-        margin: auto;
-    }
-    .bg-impression{
-        background-repeat: no-repeat;
-        background-position:center ;
-        width: 100%;
-        justify-content: center;
-        margin: auto;
-    }
-    .container-card-print{
-        width: 20%;
-        flex-wrap: wrap;
-        margin: auto;
-        margin-bottom: 5em;
-    }
-    .container-card-print img{
-        width: 10vw;
-    }
-    .site-title{
+    
+    .contain-text-landing-page p {
+        font-size: 1.5em;
+        line-height: 1.5em;
         text-align: center;
     }
+    .under-landing-page-text p{
+        font-size:1.5em;
+    }
+    .contain-text-landing-page{
+        margin-right: 2em;
+    }
+    .landing-impression-section img {
+    width: 25%;
+    margin-left: 11em;
+    }
     
-    
+    .landing-impression-section{
+        align-items: center;
+    }
+    .contained-modal p {
+        font-size: 1em;
+    }
 }
