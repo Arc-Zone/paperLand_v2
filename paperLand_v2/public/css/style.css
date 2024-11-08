@@ -760,3 +760,43 @@ display: none;
         font-size: 1em;
     }
 }
+@media screen and (min-width: 1440px) {
+    /* Grand écrans */
+}
+@media screen and (min-width: 768px) {
+    .banner-container {
+        height: 55vh;
+    }
+    .contain-text-bag-page{
+        font-size: 1.5em;
+    }
+    .container-bg-banner-bag-plat {
+        height: 45vh;
+    }
+    .bag-plat-bg-3 {
+        height: 50vh;
+    }
+    .bag-plat-section{
+        margin-bottom: 1em;
+    }
+    .text-bag-banner {
+        transform: translateY(750%);
+        font-size: 2em;
+    }
+    .contain-text-banner-bag-plat{
+        transform: translateY(300%);
+    }
+    .contain-text-banner-bag-plat h3{
+        font-size: 1.5em;
+    }
+    .contain-banner-text-3{
+        transform: translateY(350%);
+    }
+    .contain-banner-text-3 h3{
+        font-size: 1.5em;
+    }
+    .bag-btn-3{
+        width: 70%;
+        margin-left: 17em;
+    }
+}
