@@ -715,7 +715,7 @@ display: none;
     }
   
     .text-landing-banner{
-        transform: translateY(700%);
+        transform: translateY(550%);
         font-size: 2em;
         padding: 0;
     }
