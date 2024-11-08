@@ -724,5 +724,7 @@ display: none;
     }
 }
 @media screen and (min-width: 1200px) {
-
+.text-bag-banner{
+    transform: translateY(200%);
+}
 }
