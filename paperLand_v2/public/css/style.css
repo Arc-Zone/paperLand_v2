@@ -80,7 +80,7 @@ header nav a {
 .text-landing-banner {
     text-align: center;
     margin: auto;
-    padding-top: 45%; /*permet de gerer la hauteur du texte de la banniere de la landing page galere a gerer selon la taille d'ecran*/
+    transform: translateY(250%);
     letter-spacing: .5vw;
     font-size: 1em;
     
@@ -178,14 +178,14 @@ margin: 1em 0;
     width: 100%;
     height: 25vh
 }
-@media screen and (min-width:300px) {
+/* @media screen and (min-width:300px) {
     .bag-btn-3{
         margin-left: 7.5em;
     }
     /* .contain-text-banner-bag-plat{
         padding-top: 15vh;
         margin-left: 1.9em;
-    } */
+    } 
     .bag-btn{
         background-color: #eae2cd;
         text-align: center;
@@ -200,13 +200,14 @@ margin: 1em 0;
     .bag-plat-bg-3{
         height: 30vh;
     }
-    /* .text-bag-banner{
+    .text-bag-banner{
         padding-top: 18vh;
-    } */
+    }
     .contained-modal{
         margin-top: 20%;
     }
-}
+}*/
+/*
 @media screen and (min-width:350px) {
     .banner-container{
         height: 30vh;
@@ -214,18 +215,18 @@ margin: 1em 0;
     .container-bg-banner-bag-plat{
         height: 25vh;
     }
-    /* .contain-text-banner-bag-plat{
+    .contain-text-banner-bag-plat{
         padding-top: 15vh;
-    } */
+    }
     .bag-btn-3{
         margin-left: 9em;
     }
     .text-landing-banner{
         padding-top: 20vh;
     }
-    /* .text-bag-banner{
+    .text-bag-banner{
         padding-top: 25vh;
-    } */
+    }
 }
 @media screen and (min-width:400px){
     .banner-container{
@@ -263,7 +264,7 @@ margin: 1em 0;
     .contain-text-banner-bag-plat h3{
         margin-left: 5em;
     }
-} 
+}  */
 
 .text-bag-banner{
     text-align: center;
@@ -290,7 +291,7 @@ margin: 1em 0;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 30vh;
+    height: 22vh;
 }
 .bag-btn{
     background-color: #eae2cd;
@@ -323,7 +324,7 @@ margin: 1em 0;
     /* background-position: center; */
     background-size: contain;
     background-repeat:no-repeat;
-    /* height: 26.9vh; */
+    height: 22.8vh;
 }
 .contain-banner-text-3{
     text-align: right;
@@ -334,17 +335,16 @@ margin: 1em 0;
 .contain-banner-text-3 h3{
     font-size: .8em;
     text-align: right;
-    margin-right: 1.5em;
+    margin-right: 3em;
     margin-bottom: .5em;
     text-transform: uppercase;
 }
 .bag-btn-3{
-    /* margin-left: 6.5em; */
+    margin-left: 7em;
     background-color: #eae2cd;
     text-align: center;
     padding: .8em;
     width: 70%;
-    /* margin-left:6.5em ; */
     border-radius: 20px;
     font-size: 0.8em;
 }
@@ -466,11 +466,7 @@ display: none;
     justify-content: space-between;
 }
 
-@media screen and (min-width: 300px) {
-    .contained-modal {
-        margin-top: 40vh;
-    }
-}
+
 
 .contain-size-section h2{
     margin: .8em .5em;
@@ -798,5 +794,28 @@ display: none;
     .bag-btn-3{
         width: 70%;
         margin-left: 17em;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .banner-container{
+        height: 32vh;
+    }
+    .text-bag-banner{
+        font-size: 1.9em;
+        transform: translateY(650%);
+    }
+    
+    .contain-text-bag-page{
+        font-size: 1.2em;
+    }
+    .container-bg-banner-bag-plat{
+        height: 29vh;
+    }
+    .bag-plat-bg-3{
+        height: 30vh;
+        width: 100%;
+    }
+    .contain-text-banner-bag-plat{
+
     }
 }
