@@ -606,9 +606,9 @@ display: none;
 .banner-usine-container img {
     height: 55vh;
 }
-.text-landing-banner{
-    padding-top: 9vh;
-}
+/* .text-landing-banner{
+    padding-t;
+} */
 .impressions-type-container{
     justify-content: center;
     margin: auto;
