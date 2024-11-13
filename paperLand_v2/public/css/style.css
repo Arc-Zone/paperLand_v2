@@ -455,7 +455,7 @@ display: none;
     
     .text-bag-banner{
         font-size: 1.9em;
-        transform: translateY(450%);
+        transform: translateY(270%);
     }
     
     .contain-text-bag-page{
@@ -483,7 +483,7 @@ display: none;
         margin-bottom: 1em;
     }
     .text-bag-banner {
-        transform: translateY(370%);
+        transform: translateY(270%);
         font-size: 2em;
     }
     .contain-text-banner-bag-plat{
@@ -508,7 +508,7 @@ display: none;
 @media only screen and (min-width: 992px){
     .text-bag-banner{
         font-size: 2.5em;
-        transform: translateY(600%);
+        transform: translateY(400%);
         letter-spacing: .2em;
         word-spacing: .2em;
     }
@@ -680,7 +680,7 @@ display: none;
         margin-left: 4em;
     }
     .text-landing-banner{
-        transform: translateY(550%);
+        transform: translateY(350%);
         font-size: 2em;
         padding: 0;
     }
