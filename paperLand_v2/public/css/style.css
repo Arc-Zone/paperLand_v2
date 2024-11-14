@@ -461,7 +461,9 @@ display: none;
     .contain-text-bag-page{
         font-size: 1.2em;
     }
-    
+    .container-bg-banner-bag-plat{
+        height: 30vh;
+    }
     .contain-text-banner-bag-plat{
         transform: translateY(200%);
         margin-right: 7em;
@@ -475,7 +477,9 @@ display: none;
     }
 }
 @media screen and (min-width: 768px) {
-    
+    .container-bg-banner-bag-plat{
+        height: 35vh;
+    }
     .contain-text-bag-page{
         font-size: 1.5em;
     }
@@ -725,7 +729,23 @@ display: none;
     }
 }
 @media screen and (min-width: 1200px) {
-.text-bag-banner{
-    transform: translateY(250%);
+    .banner-container{
+        height: 70vh;
+    }
+    .container-bg-banner-bag-plat{
+        height: 70vh;
+    }
+    .text-bag-banner{
+        transform: translateY(850%);
+    }
 }
+@media (min-width: 1400px) {
+    .banner-container{
+        height: 80vh;
+    }
+}  
+@media (min-width: 1600px) {
+    .banner-container{
+        height: 100vh;
+    }
 }
