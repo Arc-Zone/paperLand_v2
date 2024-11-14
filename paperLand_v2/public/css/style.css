@@ -747,9 +747,15 @@ display: none;
     .banner-container{
         height: 80vh;
     }
+    .text-bag-banner{
+        transform: translateY(400%);
+    }
 }  
 @media screen and (min-width: 1600px) {
     .banner-container{
         height: 100vh;
+    }
+    .text-bag-banner{
+        transform: translateY(400%);
     }
 }
