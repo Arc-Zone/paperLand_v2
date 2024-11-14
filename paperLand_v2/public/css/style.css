@@ -517,8 +517,8 @@ display: none;
         word-spacing: .2em;
     }
     .contain-banner-text-3{
-        margin-right: 50em;
-        transform: translateY(50%);
+        margin-left: 20em;
+        transform: translateY(200%);
         text-align: center;
     }
     .contain-text-bag-page{
@@ -731,7 +731,6 @@ display: none;
 @media screen and (min-width: 1200px) {
     .contain-text-banner-bag-plat{
         transform: translateY(350%);
-    
     }
     .banner-container{
         height: 70vh;
@@ -747,9 +746,12 @@ display: none;
     .banner-container{
         height: 80vh;
     }
-   .contain-text-banner-bag-plat{
+    .contain-text-banner-bag-plat{
     transform: translateY(300%);
-   }
+    }
+    .contain-banner-text-3{
+        margin-left:30em ;
+    }
 }  
 @media screen and (min-width: 1600px) {
     .banner-container{
@@ -757,5 +759,8 @@ display: none;
     }
     .contain-text-banner-bag-plat{
         transform: translateY(300%);
-       }
+    }
+    .contain-banner-text-3{
+        margin-left:35em ;
+    }
 }
