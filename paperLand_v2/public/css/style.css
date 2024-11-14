@@ -517,7 +517,8 @@ display: none;
         word-spacing: .2em;
     }
     .contain-banner-text-3{
-        margin-left: 20em;
+        width: 70%;
+        margin-left: 17em;
         transform: translateY(200%);
         text-align: center;
     }
@@ -729,6 +730,9 @@ display: none;
     }
 }
 @media screen and (min-width: 1200px) {
+    .contain-banner-text-3{
+        margin-left: 23em;
+    }
     .contain-text-banner-bag-plat{
         transform: translateY(350%);
     }
@@ -750,17 +754,20 @@ display: none;
     transform: translateY(300%);
     }
     .contain-banner-text-3{
-        margin-left:30em ;
+        margin-left:26em ;
     }
 }  
 @media screen and (min-width: 1600px) {
+    .contain-banner-text-3{
+        margin-left: 30em;
+    }
     .banner-container{
         height: 100vh;
     }
     .contain-text-banner-bag-plat{
         transform: translateY(300%);
     }
-    .contain-banner-text-3{
-        margin-left:35em ;
+        .contain-banner-text-3{
+        margin-right:30em ;
     }
 }
