@@ -538,9 +538,8 @@ display: none;
         padding: 1em;
     }
     .contain-text-banner-bag-plat{
-
-        transform: translateY(40%);
-        margin-right: 70em;
+        transform: translateY(200%);
+        margin-right: 35em;
     }
     .contain-banner-text-3 h3{
         margin-left:3em ;
@@ -550,18 +549,19 @@ display: none;
     }
     .contain-text-banner-bag-plat h3 , .contain-banner-text-3 h3{
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         letter-spacing: .5em;
         word-spacing: .5em;
         font-weight: bold;
         width: 100%;
         margin: auto;
     }
+
 .bag-btn , .bag-btn-3{
-        width: 70%;
+        width: 60%;
         font-size: 1.5em;
         margin: 1em auto ;
-        padding: 2.5em;
+        padding: 1em;
         border-radius: 1em;
     }
     .landing-banner{
@@ -729,6 +729,10 @@ display: none;
     }
 }
 @media screen and (min-width: 1200px) {
+    .contain-text-banner-bag-plat{
+        transform: translateY(350%);
+    
+    }
     .banner-container{
         height: 70vh;
     }
