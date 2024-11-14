@@ -739,12 +739,12 @@ display: none;
         transform: translateY(500%);
     }
 }
-@media (min-width: 1400px) {
+@media screen and  (min-width: 1400px) {
     .banner-container{
         height: 80vh;
     }
 }  
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
     .banner-container{
         height: 100vh;
     }
