@@ -736,7 +736,7 @@ display: none;
         height: 70vh;
     }
     .text-bag-banner{
-        transform: translateY(700%);
+        transform: translateY(500%);
     }
 }
 @media (min-width: 1400px) {
