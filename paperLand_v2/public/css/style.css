@@ -5,7 +5,7 @@
 header{
     background-color: #eae2cd;
 }
-p , .banner-usine-container h2 , .contain-text-banner-bag-plat h3,.contain-banner-text-3 h3 , .bg-impression  h2 , .container-card-print  a , .contain-size-section h2{
+p , .banner-usine-container h2 , .contain-text-banner-bag-plat h3,.contain-banner-text-3 h3 , .bg-impression  h2 , .container-card-print  a , .contain-size-section h2 , .landing-banner-header h3{
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -55,11 +55,11 @@ header nav a {
 .contain-menu {
     padding: 1.5em;
 }
-.text-bag-banner , .container-bg-banner-bag-plat , .bag-plat-bg-3{
+.text-bag-banner , .container-bg-banner-bag-plat , .bag-plat-bg-3 , .contain-banner-landing-page{
     position: relative;
     display: inline-block;
 }
-.contain-title-luxe-section {
+.contain-title-luxe-section{
     width: 100%;
     position: absolute; /* Place le texte au-dessus de l'image */
     top: 85%; /* Centre verticalement */
@@ -72,16 +72,35 @@ header nav a {
 .contain-title-luxe-section  h3{
     font-size: 1em;
 }
+.text-landing-banner{
+    width: 100%;
+    position: absolute; /* Place le texte au-dessus de l'image */
+    top: 90%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Centre parfaitement au milieu de l'image */
+    padding: 20px; /* Espacement autour du texte */
+    text-align: center;
+    font-size: .9em;
+}
+.text-landing-banner a {
+    color: #000;
+}
+.landing-banner-header > *{
+    margin: 1em;
+    letter-spacing: .2em;
+}
 
 .contain-text-torsade-section{
     position: absolute;
     top: 10%;
     left: 5%;
-
 }
 .contain-text-torsade-section , .contain-banner-text-3{
     font-size: .9em;
     text-align: center;
+}
+.contain-text-torsade-section h3 , .contain-banner-text-3 h3 {
+    margin-bottom: .3em;
 }
 .contain-banner-text-3{
     position: absolute;
@@ -92,10 +111,12 @@ header nav a {
     background-color: #eae2cd;
     padding: 1em;
     border-radius: 1em;
+    width: fit-content;
 }
 .bag-btn a {
     color: #000;
     letter-spacing: .2em;
+    text-decoration: none;
 }
 .landing-presentation-section{
     text-align: center;
@@ -109,34 +130,9 @@ header nav a {
     font-size: 1.5em;
 }
 
-.landing-banner{
-    background-image: url('../img/landing-banner.png');
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 210px;
-}
-.text-landing-banner {
-    text-align: center;
-    margin: auto;
-    transform: translateY(250%);
-    letter-spacing: .5vw;
-    font-size: 1em;
-    
-}
 
-.text-landing-banner p{
-    font-size: 1em;
-    margin-top: .6em;
-    width: fit-content;
-    margin: auto;
-    text-decoration: none;
-    font-weight: bolder;
-}
-.text-landing-banner a {
-    color: #000;
 
-}
+
 .under-landing-page-text{
     width: 95%;
     padding: .9em;
@@ -173,7 +169,6 @@ header nav a {
 .contain-text-landing-page{
     width: 80%;
     padding: 1em;
-    margin-right: 1em;
 }
 .contain-text-landing-page p {
     margin-left: 1em;
@@ -181,16 +176,9 @@ header nav a {
     word-spacing: .3em;
     font-size: .79em;
 }
-.impressions-type-btn{
-    background-color: #eae2cd;
-    text-align: center;
-    padding: .4em;
-    border-radius: 20px;
-    font-size: 1em;
-}
-.impressions-type-btn a {
+
+.contain-text-landing-page > .bag-btn{
     font-size: .8em;
-    color: black;
 }
 
 .banner-usine-container > * {
@@ -390,223 +378,101 @@ display: none;
 
 
 @media only screen and (min-width: 600px) {
-    
-
+    .landing-banner-header{
+        width: 70%;
+        position: absolute; /* Place le texte au-dessus de l'image */
+        top: 20%; /* Centre verticalement */
+        left: 30%; /* Centre horizontalement */
+        transform: translate(-50%, -50%); /* Centre parfaitement au milieu de l'image */
+        padding: 20px; /* Espacement autour du texte */
+        text-align: center;
+        font-size: .9em;
+    }
+    .landing-banner-header p {
+        display: none;
+    }
     .contain-text-bag-page{
         font-size: 1.2em;
     }
- 
- 
-
-
-
-  
+    .contain-title-luxe-section , .text-landing-banner{
+        font-size: 1.5em;
+    }
+    .contain-title-luxe-section{
+        top: 90%;
+    }
+    .contain-text-torsade-section , .contain-banner-text-3{
+        font-size: 1.2em;
+    }
+    .landing-impression-section{
+        height: fit-content;
+    }
+    .landing-impression-section img {
+        width: 50%;
+    }
+    .contain-text-landing-page p{
+        font-size: 1em;
+        padding: 1em;
+        margin: auto;
+        letter-spacing: .2em;
+        line-height: 1.5em;
+    }
+    .contain-text-landing-page > .bag-btn{
+       text-align: center;
+        width: 80%;
+        margin-left: 1em;
+    }
 }
 @media screen and (min-width: 768px) {
-
+    .contain-text-landing-page p{
+        line-height: 2em;
+        font-size: 1.2em;
+    }
+    .contain-text-landing-page > .bag-btn{
+        text-align: center;
+        width: 80%;
+        margin-left: 1em;
+        font-size: 1.2em;
+    }
     .contain-text-bag-page{
         font-size: 1.5em;
     }
-    .bag-plat-section{
-        margin-bottom: 1em;
+    .contain-text-torsade-section , .contain-banner-text-3{
+        font-size: 1.5em;
     }
-
-
+    .landing-banner-header{
+        width: 60%;
+        font-size: 1em;
+    }
  
 }
 
 @media only screen and (min-width: 992px){
- 
- 
-    .contain-text-bag-page{
-        font-size:1.3em;
-        background-color:#eae2cd;
-        margin: auto  ;
-        width: 100%;
-    }
-    .contain-text-bag-page p {
-        width: 75%;
-        font-size: 1.5em;
-        line-height: 1.5em;
-        letter-spacing: .2em;
-        word-spacing: .2em;
-        text-align: center;
-        margin: auto;
-        padding: 1em;
-    }
-
-
- 
-
-
-    .landing-banner{
-        background-image: url('../img/desktop_banner_landing_page.jpg');
-        background-position: center ; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: 100% 105%; /* Resize the background image to cover the entire container */
-        height: 70vh;
-    }
-    header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .contain-menu{
-        display: none;
-    }
-    .containMenu{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .site-title{
-        text-align: left;
-        margin: 1em; 
-        display: inline;
-    }
-.impressions-type {
-    width: 100%;
-    }
-.impressions_type h3 {
-    text-align: center;
-}
-.contain-size-section h2{
-    font-size: 2em;
-    margin-left:2em ;
-}
-.impressions_type div{
-    width: 40%;
-    font-size: 1.5em;
-    margin: auto;
-}
-.contain-size-section img{
-    width: 100%;
-    height: 65vh;
-}
-.banner-usine-container img {
-    height: 55vh;
-}
-.text-landing-banner{
-    padding-top: 9vh;
-}
-.impressions-type-container{
-    justify-content: center;
-    margin: auto;
-    flex-wrap: nowrap;
-    text-align: center;
-}
-.container-card-print {
-    margin-bottom: 2em;
-}
-.container-card-print img{
-    width: 85%;
-    height: 50vh;
-    margin: auto;
-}
-.container-card-print a , .container-card-print p {
-    margin: 1em;
-}
-.intersection-container p {
-    font-size: 2em;
-    margin: 2em;
-}
-
-.bg-impression{
-    justify-content: center;
-}
-.bg-impression img {
-    height: 35vh;
-}
-.bg-impression p {
-    font-size: 2em;
-}
-.bg-impression  h2 {
-    font-size: 2.5em;
-}
-
-
-.banner-usine-container h2{
-    font-size: 2em;
-}
-    .banner-usine-container img{
-        width: 100%;
-    }
-    .banner-usine-container p {
-        text-align: left;
-        margin-left: 2em;
-        font-size: 1.6em;
-        width: 90%;
-        line-height: 1.8em;
-        margin-bottom: 2em;
-    }
-    .landing-banner-header{
-        position: absolute;
-        transform: translateX(30%);
-        transform: translateY(100%);
-        font-size: 1.5rem;
-        font-style: italic;
-
-    }
-    .landing-banner-header p {
-        margin-top: 1em;
-        margin-left: 4em;
-    }
-    .text-landing-banner{
-        transform: translateY(350%);
+    .contain-title-luxe-section ,  .text-landing-banner{ 
         font-size: 2em;
-        padding: 0;
     }
-    .text-landing-banner p {
-        font-style: normal;
+    .contain-text-torsade-section , .contain-banner-text-3{
+        font-size: 2em;
     }
-    .landing-impression-section{
-        height: 40vh;
-    }
-    .impressions-type-btn{
-        width: 70%;
-        margin: auto;
-        font-size: 1.5em;
-        letter-spacing: .3em;
-    }
-    
-    .contain-text-landing-page p {
-        font-size: 1.5em;
-        line-height: 1.5em;
-        text-align: center;
-    }
-    .under-landing-page-text p{
-        font-size:2em;
-        letter-spacing: .1em;
-        word-spacing: .6em;
-    }
-    .contain-text-landing-page{
-        margin-right: 2em;
-        font-size: 1.6em;
-    }
-    .landing-impression-section img {
-    width: 45%;
-    margin-left: 11em;
-    }
-    
-    .landing-impression-section{
-        align-items: center;
-        height: fit-content;
-    }
-    .contained-modal p {
-        font-size: 1em;
-    }
+  
 }
 @media screen and (min-width: 1200px) {
-
+.landing-banner-header{
+    font-size: 1.2em;
+}
     
    
 }
 @media screen and  (min-width: 1400px) {
-    
-    
-   
+    .contain-title-luxe-section ,  .text-landing-banner{
+        font-size: 2.5em;
+    }
+    .contain-text-torsade-section , .contain-banner-text-3{
+        font-size: 2.5em;
+    }
+
 }  
 @media screen and (min-width: 1600px) {
-
-    
-    
+    .landing-banner-header{
+        font-size: 1.5em;
+    }
 }
