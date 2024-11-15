@@ -249,13 +249,13 @@ margin: 1em 0;
     border-top: 1px solid #d4d2d2;
 }
 
-.bg-impression{
+/* .bg-impression{
     background-image: url('../img/bg-banner-impression-page.png');
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .bg-impression img{
     height: 25vh;
@@ -320,6 +320,7 @@ display: none;
 .contained-modal > *{
     padding: 1em;
 }
+
 .contained-modal p {
     font-size: 0.7em;
 }
