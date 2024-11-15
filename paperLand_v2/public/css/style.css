@@ -190,7 +190,7 @@ margin: 1em 0;
     background-position: center ; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     margin-bottom: 1em;
 }
@@ -489,9 +489,9 @@ display: none;
         height: 70vh;
         
     }
-    /* .container-bg-banner-bag-plat{
-        height: 70vh;
-    } */
+    .container-bg-banner-bag-plat{
+        height: 46vh;
+    }
     .contain-text-bag-page{
         font-size: 1.5em;
     }
