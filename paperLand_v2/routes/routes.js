@@ -12,4 +12,7 @@ router.get('/impression' , homeController.impression)
 router.get('/plate_size' , homeController.sizePlate)
 router.get('/torsade_size' , homeController.sizeTorsade)
 
+
+
+router.all('*', homeController.error404);
 module.exports.router = router

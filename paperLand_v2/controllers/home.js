@@ -1,10 +1,5 @@
-const db = require('../models/database.js')
 
 function home (req, res) {
-    /*
-        let [rows, fields] = db.query('SELECT * FROM tablename')
-    */
-    
     res.render('home.ejs')
 }
 function usine (req , res){
@@ -24,9 +19,13 @@ function sizePlate (req , res){
 function sizeTorsade (req , res){
     res.render('torsade_size.ejs')
 }
+function error404 (req , res){
+    res.render('error404.ejs')
+}
 module.exports.impression = impression
 module.exports.usine = usine
 module.exports.home = home
 module.exports.bag = bag
 module.exports.sizePlate = sizePlate
 module.exports.sizeTorsade = sizeTorsade
+module.exports.error404 = error404
