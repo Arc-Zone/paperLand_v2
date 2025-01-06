@@ -10,6 +10,10 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 app.use('/', routes.router)
 
 
+app.use((req, res, next) => {
+    res.status(404).render('404', { message: 'Page non trouvée' });
+  });
+
 app.listen(3000, () => {
     console.log('Start server on port 3000')
 })
