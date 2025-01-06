@@ -503,6 +503,9 @@ display: none;
 }
 
 @media only screen and (min-width: 992px){
+    .contain-size-section img{
+        width: 100%;
+    }
     .containMenu a {
         font-size: 1.3em;
     }
