@@ -385,6 +385,19 @@ display: none;
 
 
 @media only screen and (min-width: 600px) {
+    .size-guide{
+        font-size: 1.2em;
+    }
+    .section-impression-type{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .contain-size-section h2{
+        margin-left: 1.5em;
+    }
+    .contain-size-section{
+        font-size: 1.5em;
+    }
     .site-title{
         margin-left: .6em;
         
@@ -454,6 +467,30 @@ display: none;
     }
 }
 @media screen and (min-width: 768px) {
+    .footer-desktop{
+        border-top:1px solid #d4d2d2 ;
+    }
+    .border-left-footer{
+    width: 25%;
+    }
+    .border-right-footer{
+        border-right:#d4d2d2 solid 1px ;
+        border-left:#d4d2d2 solid 1px ;
+        width: 25%;
+    }
+    .plus{
+        display: none;
+    }
+    .border{
+        display: none;
+    }
+    .footer-desktop{
+        display: flex;
+        justify-content: center;
+    }
+    .contain-data-footer{
+        display: block;
+    }
     .site-footer{
         font-size:2em;
     }
@@ -503,6 +540,9 @@ display: none;
 }
 
 @media only screen and (min-width: 992px){
+    .footer-desktop{
+        font-size: 1.3em;
+    }
     .contain-size-section img{
         width: 100%;
     }
