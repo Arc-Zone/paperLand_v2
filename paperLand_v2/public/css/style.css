@@ -5,7 +5,7 @@
 header{
     background-color: #eae2cd;
 }
-p , .banner-usine-container h2 , .contain-text-banner-bag-plat h3,.contain-banner-text-3 h3 , .bg-impression  h2 , .container-card-print  a , .contain-size-section h2 , .landing-banner-header h3{
+p , .banner-usine-container h2 , .contain-text-banner-bag-plat h3,.contain-banner-text-3 h3 , .bg-impression  h2 , .container-card-print  a , .contain-size-section h2 , .landing-banner-header h3 , .containMenu{
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -116,7 +116,7 @@ header nav a {
 .bag-btn a {
     color: #000;
     letter-spacing: .2em;
-    text-decoration: none;
+    font-size: 1.4em;
 }
 .landing-presentation-section{
     text-align: center;
@@ -161,7 +161,8 @@ header nav a {
 }
 
 .landing-impression-section img {
-    width:  40%;
+    padding: 1em;
+    width: 30%;
     margin-bottom: 1em;
     margin-left: 1em;
 }
@@ -178,7 +179,9 @@ header nav a {
 }
 
 .contain-text-landing-page > .bag-btn{
+    margin:auto;
     font-size: .8em;
+    text-align: center;
 }
 
 .banner-usine-container > * {
@@ -249,14 +252,17 @@ margin: 1em 0;
     border-top: 1px solid #d4d2d2;
 }
 
-/* .bg-impression{
-    background-image: url('../img/bg-banner-impression-page.png');
+.bg-impression{
     display: flex;
     align-items: center;
+    line-height: 1.5em;
+    background-image: url(../img/bg-impression.png);
     background-repeat: no-repeat;
     background-size: cover;
-} */
-
+}
+.bg-impression h2{
+    letter-spacing: .5em;
+}
 .bg-impression img{
     height: 25vh;
 }
@@ -267,8 +273,8 @@ margin: 1em 0;
 }
 .bg-impression p {
     font-size: .7em; 
-    padding: 1em;
 }
+
 
 .impressions-type-container{
     display: flex;
@@ -379,6 +385,29 @@ display: none;
 
 
 @media only screen and (min-width: 600px) {
+    .site-title{
+        margin-left: .6em;
+        
+    } 
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding: 1em; */
+    }
+    .containMenu a {
+        text-decoration: underline;
+        font-size: 1.3em;
+    }
+.contain-menu{
+    display: none;
+}
+.containMenu{
+    display: flex;
+    font-size: .7em;
+    justify-content: center;
+    margin-top: .4em;
+}
     .landing-banner-header{
         width: 70%;
         position: absolute; /* Place le texte au-dessus de l'image */
@@ -408,7 +437,8 @@ display: none;
         height: fit-content;
     }
     .landing-impression-section img {
-        width: 50%;
+        padding: 2em;
+        width: 25%;
     }
     .contain-text-landing-page p{
         font-size: 1em;
@@ -418,12 +448,38 @@ display: none;
         line-height: 1.5em;
     }
     .contain-text-landing-page > .bag-btn{
-       text-align: center;
+        text-align: center;
         width: 80%;
         margin-left: 1em;
     }
 }
 @media screen and (min-width: 768px) {
+    .site-footer{
+        font-size:2em;
+    }
+    .containMenu a {
+        font-size: 1.5em;
+    }
+.contain-impression-content{
+    width: 60%;
+}
+.contain-impression-content h2{
+    font-size: 1.2em;
+}
+.contain-impression-content p {
+    font-size: 1.1em;
+    padding: 1.3em;
+}
+.intersection-container{
+    font-size: 1.5em;
+}
+.bg-impression{
+    justify-content: center;
+}
+    .container-card-print{
+        width: 20%;
+        text-align: center;
+    }
     .contain-text-landing-page p{
         line-height: 2em;
         font-size: 1.2em;
@@ -444,26 +500,63 @@ display: none;
         width: 60%;
         font-size: 1em;
     }
- 
 }
 
 @media only screen and (min-width: 992px){
+    .containMenu a {
+        font-size: 1.3em;
+    }
+    .contain-text-banner-bag-plat img , .banner-usine-container img{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .container-bg-banner-bag-plat{
+        display: block;
+    }
+    .banner-usine-container h2 {
+        font-size: 2em;
+    }
+    .containMenu{
+        font-size: 1em;
+    }
     .contain-title-luxe-section ,  .text-landing-banner{ 
         font-size: 2em;
     }
     .contain-text-torsade-section , .contain-banner-text-3{
         font-size: 2em;
-    }
-  
+    } 
 }
 @media screen and (min-width: 1200px) {
+    .under-landing-page-text{
+        font-size: 2em;
+    }
+    .contain-text-landing-page p {
+        font-size: 2em;
+    }
+    .contain-impression-content h2{
+        font-size: 1.5em;
+    }
+    .contain-impression-content p {
+        font-size: 1.3em;
+    }
+    .containMenu , .banner-usine-container p{
+        font-size: 1.5em;
+    }
 .landing-banner-header{
     font-size: 1.2em;
 }
-    
-   
 }
 @media screen and  (min-width: 1400px) {
+    .intersection-container p { 
+        font-size: 1.5em;
+    }
+    .bg-impression img{
+        width: 20%;
+        height: 30vh;
+    }
+    .container-card-print{
+        width: 18%;
+    }
     .contain-title-luxe-section ,  .text-landing-banner{
         font-size: 2.5em;
     }
@@ -473,7 +566,17 @@ display: none;
 
 }  
 @media screen and (min-width: 1600px) {
+    .contain-text-landing-page{
+        width: 60%;
+    }
+    .bg-impression img{
+        width: 20%;
+        height: 35vh;
+    }
     .landing-banner-header{
         font-size: 1.5em;
+    }
+    .container-card-print{
+        width: 10%;
     }
 }
