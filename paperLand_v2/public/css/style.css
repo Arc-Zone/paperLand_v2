@@ -314,14 +314,17 @@ height: 140%;
 -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
 display: none;
 }
+
 .contained-modal{
     z-index: 999;
     width:70%;
     height: 20vh;
     background-color: #eae2cd;
     border-radius: 1em;
-    margin: auto;
-    /* margin-top: 70%; */
+    /* margin: auto; */
+    position: absolute;
+    transform: translate(20%, 190%);
+
 }
 .contained-modal > *{
     padding: 1em;
@@ -383,8 +386,11 @@ display: none;
 }
 
 
-
 @media only screen and (min-width: 600px) {
+    .contained-modal{
+        width:50%;
+        transform: translate(60% , 225%);
+    }
     .size-guide{
         font-size: 1.2em;
     }
@@ -468,7 +474,7 @@ display: none;
 }
 @media screen and (min-width: 768px) {
     .contained-modal{
-        margin-top: 50%;
+        transform: translate(50% , 277%);
         font-size: 1.5em;
     }
     .footer-desktop{
@@ -545,7 +551,7 @@ display: none;
 
 @media only screen and (min-width: 992px){
     .contained-modal{
-        margin-top: 40%;
+        transform: translate(40% , 277%);
     }
     .footer-desktop{
         font-size: 1.3em;
@@ -578,7 +584,7 @@ display: none;
 }
 @media screen and (min-width: 1200px) {
     .contained-modal{
-        margin-top: 40%;
+        transform: translate(40% , 277%);
     }
     .under-landing-page-text{
         font-size: 2em;
@@ -601,7 +607,7 @@ display: none;
 }
 @media screen and  (min-width: 1400px) {
     .contained-modal{
-        margin-top: 20%;
+        transform: translate(45% , 277%);
     }
     .intersection-container p { 
         font-size: 1.5em;
@@ -623,7 +629,7 @@ display: none;
 }  
 @media screen and (min-width: 1600px) {
     .contained-modal{
-        margin-top: 20%;
+        transform: translate(45% , 277%);
     }
     .contain-text-landing-page{
         width: 60%;
